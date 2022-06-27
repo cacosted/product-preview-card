@@ -16,19 +16,163 @@
     --white: hsl(0, 0%, 100%);
 
     /* ### Sizes */
-    --medium: 0.875rem;
-
+    --small: 0.75rem;
+    --medium: 0.8rem;
+    --large: 1.8rem;
+    
     /* ###Fonts */
     --primary: 'Montserrat', sans-serif;
     --accent: 'Fraunces', serif;;
+    
+    --bold:700;
+    --regular:500;
+
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: var(--primary);
+    font-weight: var(--regular);
+    font-size: var(--medium);
 }
 
 img {
     max-width: 100%;
+}
+
+h1 {
+    margin:0;
+    line-height: 1;    
+}
+
+p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+
+
+/* ##########
+    Layout
+########## */
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--cream);
+
+}
+
+/* ##########
+    Card
+########## */
+
+.card {
+    background-color: var(--white);
+    border-radius: 0.625rem;
+    overflow: hidden;
+}
+
+.card--centered {
+    width: 80%;
+    max-width: 20.5rem;    
+
+    margin-inline: auto;
+}
+
+
+.card__content {
+    padding: 1.5em;
+
+    display: grid;
+    gap: 1em;
+}
+
+.card__subtitle {
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+.card__description {
+    max-width: 40ch;
+}
+
+.card__pricelist {
+    margin-block-start: 2em;
+
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.card__price--sale {
+    font-size: var(--large);
+    color: var(--dark-cyan);
+}
+
+.card__price--discount {
+    font-size: var(--small);
+}
+
+.card__price {
+    position: relative;
+}
+
+.card__price::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 0.07rem;
+    background-color: var(--dark-blue);
+}
+/* ##########
+    Button
+########## */
+
+
+.button__cart {
+    padding-block: 1rem;
+    border: none;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+
+    border-radius: .6rem;
+
+    font-weight: var(--bold);   
+}
+
+.button__content {
+    display: flex;
+    justify-content: center;
+    gap: .7em;
+}
+
+/* ##########
+    Utility
+########## */
+
+.heading {
+    font-family: var(--accent);
+    font-size: var(--large);
+}
+
+
+/* ##########
+    Media queries
+########## */
+
+@media (min-width: 700px) {
+    .card {
+        display: flex;
+        max-width: 35rem;
+    }
+    
+    .img {
+        height: 100%;
+    }
+
 }
