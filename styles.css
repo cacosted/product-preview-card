@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after
+{
+    box-sizing: border-box;
+}
+
+:root {
+
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    /* ### Neutral */
+    --dark-blue: hsl(212, 21%, 14%);
+    --gray-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+
+    /* ### Sizes */
+    --medium: 0.875rem;
+
+    /* ###Fonts */
+    --primary: 'Montserrat', sans-serif;
+    --accent: 'Fraunces', serif;;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--primary);
+}
+
+img {
+    max-width: 100%;
+}
