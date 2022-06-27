@@ -135,6 +135,8 @@ p {
 
 
 .button__cart {
+    --darken: 0%;
+    --dark-cyan: hsl(158, 36%, calc(37% - var(--darken)));
     padding-block: 1rem;
     border: none;
     background-color: var(--dark-cyan);
@@ -143,6 +145,11 @@ p {
     border-radius: .6rem;
 
     font-weight: var(--bold);   
+}
+
+.button__cart:hover {
+    --darken: 15%;
+    cursor: pointer;
 }
 
 .button__content {
