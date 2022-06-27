@@ -26,12 +26,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Mobile](https://user-images.githubusercontent.com/57645180/176048664-fe7ac305-b24a-44fa-88e6-a882507aef02.png)
+![Desktop](https://user-images.githubusercontent.com/57645180/176048802-1b1b5d65-d8b9-451b-b28e-514edaf5d625.png)
+
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live Demo](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa/hub/product-preview-responsive-card-build-with-vanilla-css-0K32SRDl8w)
+- Live Site URL: [Live Demo](https://cacosted.github.io/product-preview-card)
 
 ## My process
 
